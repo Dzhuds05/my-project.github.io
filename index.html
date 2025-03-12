@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zhaniya Turgumbayeva</h1>
+            <p>Student ID: 2417691</p>
+        </header>
+
+        <section class="date">
+            <h2>Today's Date</h2>
+            <p id="current-date"></p>
+        </section>
+
+        <section class="assignments">
+            <h2>My Projects</h2>
+            <button class="submit-btn" onclick="submitAssignment()">Submit an Assignment</button>
+        </section>
+
+        <section class="lecture-materials">
+            <h2>Lecture Materials</h2>
+            <ul>
+                <li><a href="https://docs.google.com" target="_blank">Lecture 1: Introduction</a></li>
+                <li><a href="https://docs.google.com" target="_blank">Lecture 2: Advanced Topics</a></li>
+                <li><a href="https://docs.google.com" target="_blank">Lecture 3: Final Exam Preparation</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Display current date
+        const dateElement = document.getElementById('current-date');
+        const currentDate = new Date().toLocaleDateString();
+        dateElement.textContent = currentDate;
+
+        // Function for "Submit Assignment" button
+        function submitAssignment() {
+            window.location.href = 'https://your-submission-link.com';  // Replace with your actual submission link
+        }
+    </script>
+</body>
+</html>
